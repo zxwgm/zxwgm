@@ -1,31 +1,65 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To do list</title>
     <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
         form {
             width: 500px;
             margin: auto;
+            margin-top: 50px;
         }
 
         input {
-            width: 400px; height: 30px;
-            padding: 10px 10px;
+            width: 400px;
+            height: 40px;
+            padding: 10px;
+            border-radius: 10px;
+            border: 3px solid #ccc;
         }
-        
+
         button {
             margin: 0 10px;
             position: relative;
         }
 
-
-
-        
+        li {
+            position: relative;
+            left: 680px;
+            top: 10px;
+            padding: 5px;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>할 일 목록</h1>
+    </header>
+
     <form id="todo-form">
         <input type="text" placeholder="할 일을 입력해 주세요" />
     </form>
@@ -33,7 +67,10 @@
     <!-- 투두리스트 나열 -->
     <ul id="todo-list"></ul>
 
-    <script src="dd.js"></script>
+    <footer>
+        <p>&copy; 2023 To do list 애플리케이션</p>
+    </footer>
     
+    <script src="dd.js"></script>
 </body>
 </html>
